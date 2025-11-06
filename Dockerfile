@@ -6,7 +6,7 @@ COPY factory_erp_starter.zip /app/
 RUN apt-get update && apt-get install -y unzip
 RUN unzip factory_erp_starter.zip -d /app && rm factory_erp_starter.zip
 
-RUN pip install --no-cache-dir -r /app/factory_erp_starter/backend/requirements.txt
+RUN pip install --no-cache-dir -r /app/backend/requirements.txt
 
 EXPOSE 8000
 CMD ["python", "/app/factory_erp_starter/backend/app/main.py"]
