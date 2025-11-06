@@ -9,4 +9,4 @@ RUN unzip factory_erp_starter.zip -d /app && rm factory_erp_starter.zip
 RUN pip install --no-cache-dir -r requirements.txt || true
 
 EXPOSE 8000
-CMD ["python", "main.py"]
+CMD ["python", "/app/factory_erp_starter/main.py"]
